@@ -23,6 +23,8 @@ section {
     height: 100vh;
     /* aligns on y axis; x would align on x axis
     ALL OF THESE SETTINGS ARE REQUIRED*/
+    /* optional but might be useful */
+    scroll-padding: 30px;
 }
 
 /* 3. Can also vary height (for y axis, width for x axis) and it will still scroll-snap-align to the start, center or end of the section!! That is cool.
