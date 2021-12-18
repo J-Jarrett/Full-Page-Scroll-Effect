@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* 2. Add scroll-snap-align and set to start, center or end;  */
+    scroll-snap-align: start;
+}
+
+/* 1. Set parent element container to this scroll-snap-type */
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    /* aligns on y axis; x would align on x axis
+    ALL OF THESE SETTINGS ARE REQUIRED*/
+}
+
+/* 3. Can also vary height (for y axis, width for x axis) and it will still scroll-snap-align to the start, center or end of the section!! That is cool.
+Exception: last section. Only shows to the end because there's nothing else to show.
+*/
+.one {
+    background-color: purple;
+}
+
+.two {
+    background-color:royalblue;
+    height: 50vh;
+}
+
+.three {
+    background-color: seagreen;
+    height: 80vh;
+}
+
+.four {
+    background-color: brown;
+    height: 60vh;
+}
